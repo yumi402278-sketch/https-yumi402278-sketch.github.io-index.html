@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+TC:wght@300;400;600&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html, body { margin: 0; padding: 0; background-color: #4A3018; }
+  html, body { margin: 0; padding: 0; background-color: #5A3C20; }
 
   :root {
     --gold: #C9A96E;
@@ -19,10 +19,10 @@
 
   html {
     scroll-behavior: smooth;
-    background-color: #4A3018;
+    background-color: #5A3C20;
   }
   body {
-    background-color: #4A3018;
+    background-color: #5A3C20;
     background-image:
       repeating-linear-gradient(90deg, transparent 0px, transparent 2px, rgba(5,2,0,0.45) 2px, rgba(5,2,0,0.45) 3px, transparent 3px, transparent 12px, rgba(20,8,0,0.25) 12px, rgba(20,8,0,0.25) 13px),
       repeating-linear-gradient(0deg, transparent 0px, transparent 3px, rgba(5,2,0,0.38) 3px, rgba(5,2,0,0.38) 4px, transparent 4px, transparent 14px, rgba(18,7,0,0.20) 14px, rgba(18,7,0,0.20) 15px);
@@ -45,7 +45,7 @@
     padding: 60px 24px;
     text-align: center;
     overflow: hidden;
-    background-color: #4A3018;
+    background-color: #5A3C20;
     background-image:
       repeating-linear-gradient(90deg, transparent 0px, transparent 2px, rgba(5,2,0,0.45) 2px, rgba(5,2,0,0.45) 3px, transparent 3px, transparent 12px, rgba(20,8,0,0.25) 12px, rgba(20,8,0,0.25) 13px),
       repeating-linear-gradient(0deg, transparent 0px, transparent 3px, rgba(5,2,0,0.38) 3px, rgba(5,2,0,0.38) 4px, transparent 4px, transparent 14px, rgba(18,7,0,0.20) 14px, rgba(18,7,0,0.20) 15px);
@@ -228,7 +228,7 @@
 
   /* ─── SERVICE CARD ─── */
   .service-card {
-    background: #4A3018;
+    background: #5A3C20;
     border: 1px solid #C9A96E;
     padding: 32px 36px;
     margin-bottom: 20px;
@@ -318,7 +318,7 @@
   }
 
   .price-variant {
-    background: #4A3018;
+    background: #5A3C20;
     border: 1px solid #C9A96E;
     padding: 24px 28px;
     flex: 1;
@@ -334,9 +334,9 @@
 
   .variant-count {
     font-family: 'Cinzel', serif;
-    font-size: 11px;
-    letter-spacing: 0.3em;
-    color: var(--gold);
+    font-size: 14px;
+    letter-spacing: 0.25em;
+    color: #C9A96E;
     margin-bottom: 10px;
   }
 
@@ -395,7 +395,7 @@
   }
 
   .product-card {
-    background: #4A3018;
+    background: #5A3C20;
     border: 1px solid #C9A96E;
     padding: 28px 24px;
     text-align: center;
@@ -438,7 +438,7 @@
 
   /* ─── SPECIAL TREATMENT ─── */
   .special-card {
-    background: linear-gradient(135deg, #332008 0%, #4A3018 100%);
+    background: linear-gradient(135deg, #332008 0%, #5A3C20 100%);
     border: 1px solid #C9A96E;
     padding: 48px 40px;
     position: relative;
@@ -617,7 +617,7 @@
 
   /* ─── PRODUCT DETAIL CARD ─── */
   .product-detail-card {
-    background: #4A3018;
+    background: #5A3C20;
     border: 1px solid #C9A96E;
     padding: 24px 28px;
     margin-bottom: 16px;
@@ -728,7 +728,7 @@
     top: -9px; left: 50%;
     transform: translateX(-50%);
     font-size: 14px; color: var(--gold);
-    background: #4A3018;
+    background: #5A3C20;
     padding: 0 14px;
   }
   .hero-corner {
@@ -848,6 +848,30 @@
       <div class="meta-row">操作時長 2～4 hr</div>
     </div>
 
+    <!-- 年補色 -->
+    <div class="service-card">
+      <div class="card-top">
+        <div class="service-name">1.5 年內補色<span style="font-size:.7em;font-weight:300;letter-spacing:.05em;">（他家操作，重新計價）</span></div>
+      </div>
+      <div class="price-variants" style="margin-top:20px;">
+        <div class="price-variant">
+          <div class="variant-count" style="font-size:16px;letter-spacing:.2em;">眉</div>
+          <div class="variant-price">$3,000</div>
+          <div class="variant-note">/ 次</div>
+        </div>
+        <div class="price-variant">
+          <div class="variant-count" style="font-size:16px;letter-spacing:.2em;">眼線</div>
+          <div class="variant-price">$2,500</div>
+          <div class="variant-note">/ 次</div>
+        </div>
+        <div class="price-variant">
+          <div class="variant-count" style="font-size:16px;letter-spacing:.2em;">唇</div>
+          <div class="variant-price">$5,000</div>
+          <div class="variant-note">/ 次</div>
+        </div>
+      </div>
+    </div>
+
     <div class="service-card">
       <div class="card-top">
         <div class="service-name">淡色處理<span style="font-size:.7em;font-weight:300;letter-spacing:.05em;">（淡斑、唇暗沉、舊眉）</span></div>
@@ -856,15 +880,26 @@
         <div class="price-variant">
           <div class="variant-count">SINGLE &nbsp;·&nbsp; 單次</div>
           <div class="variant-price">$3,999</div>
-          <div class="variant-note">/ 次</div>
         </div>
         <div class="price-variant featured">
           <div class="variant-count">DOUBLE &nbsp;·&nbsp; 兩次</div>
           <div class="variant-price">$6,000</div>
-          <div class="variant-note">/ 2 次</div>
         </div>
       </div>
       <div class="meta-row" style="margin-top:14px;">操作時長 1.5 hr～2 hr</div>
+    </div>
+
+    <!-- 乳暈改色 -->
+    <div class="service-card">
+      <div class="card-top">
+        <div class="service-name">乳暈改色</div>
+        <div class="price-block">
+          <div class="price">$8,000</div>
+          <div class="price-unit">/ 2 次</div>
+        </div>
+      </div>
+      <div class="gift-tag">針對色素沉澱重、產後媽媽</div>
+      <div class="meta-row">操作時長約 2～3 hr</div>
     </div>
   </section>
 
@@ -885,11 +920,21 @@
         <div class="special-price" style="white-space:nowrap;font-size:clamp(24px,5vw,38px);"><sup>$</sup>9,999<span>/ 次</span></div>
       </div>
       <div style="height:16px;"></div>
-      <div class="special-desc" style="margin-bottom:12px;">精萃外泌體安瓶 頭皮導入 + 舒曼波光能養護 30 分鐘</div>
-      <div class="special-desc" style="line-height:1.9;margin-bottom:20px;">
-        嚴選臍帶幹細胞培養萃取外泌體，具備 INCI 國際化妝品原料登錄與 ESC 認證。<br><br>
-        每瓶外泌體生長因子含量高達 <span style="color:#E8C88A;font-weight:500;">20,000 億顆</span>，遠高於一般標準值 1,000 億顆，提供高濃度頭皮養護能量，打造健康頭皮環境與理想髮絲基礎。
-      </div>
+      <div style="height:12px;"></div>
+      <ul style="list-style:none;padding:0;margin:0 0 16px 0;">
+        <li style="font-family:'Noto Serif TC',serif;font-size:13px;font-weight:300;color:rgba(247,243,238,0.75);letter-spacing:.08em;line-height:1.9;padding-left:18px;position:relative;">
+          <span style="position:absolute;left:0;color:#C9A96E;">✦</span>精萃外泌體安瓶 頭皮導入 + 舒曼波光能養護 30 分鐘
+        </li>
+        <li style="font-family:'Noto Serif TC',serif;font-size:13px;font-weight:300;color:rgba(247,243,238,0.75);letter-spacing:.08em;line-height:1.9;padding-left:18px;position:relative;">
+          <span style="position:absolute;left:0;color:#C9A96E;">✦</span>嚴選臍帶幹細胞培養萃取，具備 INCI 國際登錄與 ESC 認證
+        </li>
+        <li style="font-family:'Noto Serif TC',serif;font-size:13px;font-weight:300;color:rgba(247,243,238,0.75);letter-spacing:.08em;line-height:1.9;padding-left:18px;position:relative;">
+          <span style="position:absolute;left:0;color:#C9A96E;">✦</span>每瓶生長因子高達 <span style="color:#E8C88A;font-weight:500;">20,000 億顆</span>，遠高於標準值 1,000 億顆
+        </li>
+        <li style="font-family:'Noto Serif TC',serif;font-size:13px;font-weight:300;color:rgba(247,243,238,0.75);letter-spacing:.08em;line-height:1.9;padding-left:18px;position:relative;">
+          <span style="position:absolute;left:0;color:#C9A96E;">✦</span>高濃度頭皮養護能量，打造健康頭皮與理想髮絲基礎
+        </li>
+      </ul>
     </div>
 
     <div class="service-card" style="margin-top:16px;">
@@ -1012,6 +1057,7 @@
 <!-- FOOTER -->
 <footer class="footer">
   <div class="footer-logo">US BEAUTY STUDIO</div>
+  <div style="font-size:12px;font-weight:400;color:#A89870;letter-spacing:0.15em;margin-bottom:16px;">地址：中山捷運站 4 號出口 1 分鐘</div>
   <div class="footer-line"></div>
   <div class="footer-note">
     價格如有調整，以現場公告為準<br>
