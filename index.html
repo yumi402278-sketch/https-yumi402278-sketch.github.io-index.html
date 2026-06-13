@@ -5,7 +5,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>US BEAUTY STUDIO — 價目表</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+TC:wght@300;400;600&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
-<style>
+.new-hero {
+  position: relative;
+  padding: 0;
+  min-height: auto;
+  background: #000;
+}
+
+.new-hero::before {
+  display: none;
+}
+
+.new-hero img {
+  width: 100%;
+  display: block;
+}
+
+.hotspot {
+  position: absolute;
+  display: block;
+  z-index: 9999;
+}
+
+/* LINE */
+.line-link {
+  left: 16%;
+  top: 78.2%;
+  width: 68%;
+  height: 5.5%;
+}
+
+/* Instagram */
+.ig-link {
+  left: 16%;
+  top: 84.7%;
+  width: 68%;
+  height: 5.5%;
+}
+
+/* 地址 */
+.map-link {
+  left: 5%;
+  top: 92.6%;
+  width: 90%;
+  height: 4.8%;
+}
+ <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { margin: 0; padding: 0; background-color: #5A3C20; }
 
@@ -51,14 +96,15 @@
       repeating-linear-gradient(0deg, transparent 0px, transparent 3px, rgba(5,2,0,0.38) 3px, rgba(5,2,0,0.38) 4px, transparent 4px, transparent 14px, rgba(18,7,0,0.20) 14px, rgba(18,7,0,0.20) 15px);
   }
 
-  .hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-      radial-gradient(ellipse 60% 52% at 50% 45%, rgba(240,190,90,0.38) 0%, rgba(200,140,40,0.14) 42%, transparent 65%),
-      radial-gradient(ellipse 100% 100% at 50% 50%, transparent 25%, rgba(4,1,0,0.90) 100%);
-    z-index: 0;
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 52% at 50% 45%, rgba(255, 229, 176, 0.25), transparent 58%),
+    radial-gradient(ellipse 100% 100% at 50% 50%, rgba(0, 0, 0, 0.35), transparent 70%);
+  z-index: 0;
+  pointer-events: none;
   }
 
   /* 全頁暈影 */
